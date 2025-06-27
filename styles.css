@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #AA57CC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 25px 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+.info h1 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.info p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #474747;
+}
+.titleBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+input[type="checkbox"] {
+  accent-color: #AA57CC;
+  transform: scale(1.2);
+  cursor: pointer;
+  margin-right: 5px;
+}
+label {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.inputs {
+  margin: 20px 0 27px;
+}
+.inputs input,
+.inputs button {
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.15s ease;
+}
+.inputs input {
+  height: 60px;
+  padding: 0 17px;
+  font-size: 19px;
+  border: 1px solid #999;
+}
+.inputs input::placeholder {
+  color: #999;
+}
+.inputs input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.inputs input:focus::placeholder {
+  color: #bebebe;
+}
+.inputs button {
+  height: 56px;
+  margin-top: 20px;
+  border: none;
+  background: #AA57CC;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.inputs button:hover {
+  opacity: 0.85;
+}
+.inputs button:active {
+  opacity: 1;
+}
+.info-txt {
+  display: none;
+  font-size: 19px;
+  text-align: center;
+  margin: 15px 0 18px;
+}
+.info-txt span {
+  color: #AA57CC;
+}
+@media (max-width: 520px) {
+  .wrapper {
+    padding: 17px 20px 10px;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .inputs input {
+    height: 54px;
+    font-size: 17px;
+  }
+  .inputs button {
+    height: 50px;
+    font-size: 16px
+  }
+  .info-txt{
+    font-size: 18px;
+  } 
+}
+  
