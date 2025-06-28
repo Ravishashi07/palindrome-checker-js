@@ -58,12 +58,17 @@ const elementsToAnimate = [
     document.querySelector(".inputs input"),
     document.querySelector(".inputs button"),
     document.querySelector(".info-txt"),
-    document.querySelector("#themeToggle")
+    document.querySelector("#themeToggle"),
+    document.querySelector("#autoClean"),
+    document.querySelector(".info-txt span"),
+    document.querySelector("#autoClean").parentElement,
+    document.querySelector(".checkmark")
+
 ];
 
 elementsToAnimate.forEach(el => {
     if (el) {
-        el.style.transition = "all 1.5s ease";
+        el.style.transition = "all 2s ease";
     }
 });
 
